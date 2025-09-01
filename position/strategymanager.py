@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+### Needs review and optimization 
+
 class Strategy:
     def __init__(self, name: str, signals: pd.Series, risky_returns: pd.Series, risk_free_returns: pd.Series, max_position: float, transaction_costs: float=0.01):
         self.name = name
