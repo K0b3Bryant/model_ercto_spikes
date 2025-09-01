@@ -1,4 +1,4 @@
-def lagger(self, df: pd.DataFrame, lags: list = [2]):
+def lagger(self, df: pd.DataFrame, lags: list = [2])--> pd.DataFrame:
   """ Lags df multiple times. """
   
   features = []
