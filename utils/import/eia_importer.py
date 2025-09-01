@@ -1,6 +1,6 @@
 import requests
 
-def eia_import(series_id, api_key):
+def eia_importer(series_id, api_key):
     """ Fetch EIA series data (e.g., petroleum, natural gas) """
     url = f"http://api.eia.gov/series/?series_id={series_id}&api_key={api_key}"
     data = requests.get(url).json()
