@@ -1,6 +1,6 @@
 import yfinance as yf
 
-def yahoo_import(tickers, start=None, end=None, interval='1d'):
+def yahoo_importer(tickers, start=None, end=None, interval='1d'):
     data = yf.download(tickers, start=start, end=end, interval=interval, group_by='ticker')
     
     if isinstance(tickers, list):
