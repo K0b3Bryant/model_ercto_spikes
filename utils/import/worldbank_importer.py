@@ -1,7 +1,7 @@
 import wbdata
 import datetime
 
-def worldbank_import(indicators, countries='all', start=None, end=None):
+def worldbank_importer(indicators, countries='all', start=None, end=None):
     """ Fetch World Bank data. """
     
     if start is None: start = datetime.datetime(2000, 1, 1)
