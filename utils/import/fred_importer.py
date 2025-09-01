@@ -1,7 +1,7 @@
 from fredapi import Fred
 import pandas as pd
 
-def fetch_fred_series(tickers, api_key, start=None, end=None):
+def fred_importer(tickers, api_key, start=None, end=None):
     """ Fetch multiple series from FRED and return a merged DataFrame. """
     fred = Fred(api_key=api_key)
     df_list = []
