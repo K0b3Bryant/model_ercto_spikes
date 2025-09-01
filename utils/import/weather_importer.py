@@ -2,7 +2,7 @@ import requests
 import pandas as pd
 from datetime import datetime
 
-def weather_import(city, api_key, start=None, end=None):
+def weather_importer(city, api_key, start=None, end=None):
     """ Fetch historical weather data from OpenWeatherMap for a given city. """
     url = f"http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=metric"
     response = requests.get(url)
