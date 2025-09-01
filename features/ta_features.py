@@ -1,4 +1,5 @@
-def ta(window:int=3, high:str="high", low:str="low", close:str="close", open:str="open", volume:str="volume")
+def ta(window:int=3, high:str="high", low:str="low", close:str="close", open:str="open", volume:str="volume"):
+  """ Generates ta features """
 
   prices = df.loc[:, [close, open, high, low, volume]].sort_index(inplace=True)
 
